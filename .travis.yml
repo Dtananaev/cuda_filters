@@ -1,23 +1,13 @@
-#
-# Use ubuntu trusty (14.04) with sudo privileges.
-dist: trusty
-sudo: required
-language:
-  - generic
-cache:
-  - apt
 
 language: cpp
 compiler:
   - gcc
   
-before_script:
- - sudo apt-get update -qq
- - sudo apt-get install -qq build-essential
- - sudo apt-get install -qq gcc-4.7
- - wget https://developer.nvidia.com/cuda-downloads/cuda-repo-ubuntu1404_7.5-18_amd64.deb
- - sudo dpkg -i cuda-repo-ubuntu1404_7.5-18_amd64.deb
- - sudo apt-get update
- - sudo apt-get install cuda
- 
-script: make
+install:
+- wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1204/x86_64/cuda-repo-ubuntu1204_7.0-28_amd64.deb
+- sudo dpkg -i cuda-repo-ubuntu1204_7.0-28_amd64.deb
+- sudo apt-get update -qq
+- sudo apt-get install build-essential cuda-minimal-build-7.0 freeglut3-dev
+script:
+- export PATH=/usr/local/cuda-7.0/bin/:${PATH}
+- make
