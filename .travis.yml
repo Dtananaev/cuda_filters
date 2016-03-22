@@ -9,6 +9,7 @@ install:
 - sudo apt-get update -qq
 - sudo apt-get install cuda
 script:
+- export PATH=/usr/local/cuda-7.0/bin/:${PATH}
 - ls
 - cd cuda_nlm
 - ls
