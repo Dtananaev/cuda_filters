@@ -10,4 +10,5 @@ install:
 - sudo apt-get install cuda
 script:
 - export PATH=/usr/local/cuda-7.0/bin/:${PATH}
+- cd cuda_filters/
 - make
