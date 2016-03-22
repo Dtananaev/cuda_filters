@@ -10,5 +10,4 @@ install:
 - sudo apt-get install cuda
 script:
 - export PATH=/usr/local/cuda-7.0/bin/:${PATH}
-- cd cuda_filters/
-- make
+- nvcc -O3 -Xcompiler="-fopenmp" -arch=compute_20 -code=compute_20 -I. nlm.cc cuda_nlm.cu cuda_nlm_smem.cu timer.cc -o cunlm
