@@ -16,7 +16,6 @@ before_script:
   - sudo apt-get install -qq build-essential
   - sudo apt-get install -qq gcc-4.7
   - sudo apt-get install -qq nvidia-common
-  - sudo apt-get install -qq nvidia-current
   - sudo apt-get install -qq nvidia-cuda-toolkit nvidia-cuda-dev
   
 script: make
