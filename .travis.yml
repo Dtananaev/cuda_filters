@@ -10,4 +10,6 @@ install:
 - sudo apt-get install cuda
 script:
 - ls
+- cd cuda_nlm
+- ls
 - make
