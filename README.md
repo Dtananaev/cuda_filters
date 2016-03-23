@@ -30,7 +30,7 @@ It contains:
            * make
       * To run:
            ./cuinv filename 
-* cuda_median - 3x3 median filter which is denoise "salt and pepper" type of noise
+* cuda_median - 3x3 median filter which can denoise "salt and pepper" type of noise
 <p align="center">
   <img src="https://github.com/Dtananaev/cuda_filters/blob/master/pictures/balloons_noisy.jpg" width="350"/>
   <img src="https://github.com/Dtananaev/cuda_filters/blob/master/pictures/balloons_noisy_cumedian.jpg" width="350"/>
