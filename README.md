@@ -13,4 +13,20 @@ It contains:
   <img src="https://github.com/Dtananaev/cuda_filters/blob/master/pictures/tower_gaussn.jpg" width="350"/>
   <img src="https://github.com/Dtananaev/cuda_filters/blob/master/pictures/tower_gaussn_cunlm.jpg" width="350"/>
 </p>
- 
+      * To install:
+            * install cuda nvcc compiler
+            * cd ../cuda_filters/cuda_nlm
+            * make
+      * To run:
+            *./cunlm filename  <path radius> <window radius> <sigma> 
+* cuda_inv - inverse of the picture color
+<p align="center">
+  <img src="https://github.com/Dtananaev/cuda_filters/blob/master/pictures/lena.jpg" width="350"/>
+  <img src="https://github.com/Dtananaev/cuda_filters/blob/master/pictures/lena_inverted.jpg" width="350"/>
+</p>
+   * To install:
+            * install cuda nvcc compiler
+            * cd ../cuda_filters/cuda_inv
+            * make
+      * To run:
+            *./cuinv filename
