@@ -17,3 +17,6 @@ script:
 - cd ..
 - cd cuda_inv
 - make
+- cd ..
+- cd cuda_median
+- make

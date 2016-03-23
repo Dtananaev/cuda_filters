@@ -1,3 +1,11 @@
+/*
+* cudinv.cu
+*
+*  Created on: February 12, 2015
+*      Author: Denis Tananaev
+*/
+
+
 #include "CTensor.h"
 #include "timer.h"
 #include <string>
